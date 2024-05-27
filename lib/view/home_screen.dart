@@ -255,7 +255,155 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 15),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Special Offer",
+                          style: TextStyle(
+                              fontSize: Get.width * 0.05,
+                              color: Colors.black54,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 15.0),
+                    child: Container(
+                      width: Get.width,
+                      height: Get.height * 0.13,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 2,
+                              spreadRadius: 2,
+                              offset: const Offset(0, 2),
+                              color: Colors.grey.shade200
+                            )
+                          ],
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: Get.width * 0.35,
+                            height: Get.height * 0.12,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                image: const DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image:
+                                        AssetImage("assets/images/splash.jpg"))),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 8.0, horizontal: 15),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Text(
+                                  "Special Offer in store",
+                                  style: TextStyle(fontSize: Get.width * 0.04),
+                                ),
+                                Text(
+                                  "Free Delivery",
+                                  style: TextStyle(fontSize: Get.width * 0.04),
+                                ),
+                                Container(
+                                  width: Get.width * 0.28,
+                                  height: Get.height * 0.04,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: MyColors.yellow),
+                                  child: Center(
+                                    child: Text(
+                                      "Order now",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: Get.width * 0.04),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            width: Get.width * 0.07,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: Get.width,
+                    height: Get.height * 0.13,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 2,
+                              spreadRadius: 2,
+                              offset: const Offset(0, 2),
+                              color: Colors.grey.shade200
+                          )
+                        ],
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: Get.width * 0.35,
+                          height: Get.height * 0.12,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: const DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image:
+                                  AssetImage("assets/images/splash.jpg"))),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 8.0, horizontal: 15),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                "Special Offer in store",
+                                style: TextStyle(fontSize: Get.width * 0.04),
+                              ),
+                              Text(
+                                "Free Delivery",
+                                style: TextStyle(fontSize: Get.width * 0.04),
+                              ),
+                              Container(
+                                width: Get.width * 0.28,
+                                height: Get.height * 0.04,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: MyColors.yellow),
+                                child: Center(
+                                  child: Text(
+                                    "Order now",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: Get.width * 0.04),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: Get.width * 0.05,
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
