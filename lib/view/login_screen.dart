@@ -1,4 +1,5 @@
 import 'package:delivery_resturent/helper/colors.dart';
+import 'package:delivery_resturent/view/home_screen.dart';
 import 'package:delivery_resturent/view/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -99,7 +100,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                               fixedSize:
                                   Size(Get.width * 0.7, Get.height * 0.06)),
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.to(const HomeScreen());
+                          },
                           child: Text(
                             'login',
                             style: TextStyle(
@@ -110,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Don't Have an Account?"),
+                        const Text("Don't Have an Account?"),
                         TextButton(
                             onPressed: () {
                               Get.to(const SignUpScreen());
