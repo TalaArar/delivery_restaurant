@@ -38,7 +38,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 children: [
                   CircleAvatar(
                     radius: 25,
-                    backgroundColor: MyColors.darkOrange,
+                    backgroundColor: MyColors.blue,
                     child: const Icon(
                       Icons.navigate_next,
                       color: Colors.white,
@@ -87,7 +87,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               "price",
                               style: TextStyle(
                                   fontSize: Get.width * 0.055,
-                                  color: MyColors.yellow,
+                                  color: MyColors.red,
                                   fontWeight: FontWeight.bold,
                                   fontStyle: FontStyle.italic),
                             ),
@@ -98,7 +98,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   "9.99 \$ / Moth",
                                   style: TextStyle(
                                     fontSize: Get.width * 0.07,
-                                    color: MyColors.yellow,
+                                    color: MyColors.red,
                                   ),
                                 )
                               ],
@@ -112,7 +112,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           children: [
                             Icon(
                               Icons.check_circle,
-                              color: MyColors.darkOrange,
+                              color: MyColors.blue,
                             ),
                             SizedBox(
                               width: Get.width * 0.02,
@@ -125,7 +125,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           children: [
                             Icon(
                               Icons.check_circle,
-                              color: MyColors.darkOrange,
+                              color: MyColors.blue,
                             ),
                             SizedBox(
                               width: Get.width * 0.02,
@@ -138,7 +138,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           children: [
                             Icon(
                               Icons.check_circle,
-                              color: MyColors.darkOrange,
+                              color: MyColors.blue,
                             ),
                             SizedBox(
                               width: Get.width * 0.02,
@@ -151,7 +151,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           children: [
                             Icon(
                               Icons.check_circle,
-                              color: MyColors.darkOrange,
+                              color: MyColors.blue,
                             ),
                             SizedBox(
                               width: Get.width * 0.02,

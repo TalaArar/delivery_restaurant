@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
               SizedBox(
                 height: Get.height * 0.1,
               ),
-              Lottie.asset("assets/lottie/Xg6ffgKwQL.json"),
+              Lottie.asset("assets/lottie/aRTExSXReY.json"),
               Column(
                 children: [
                   Text(

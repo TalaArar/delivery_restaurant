@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Delivery restaurant',
       theme: ThemeData(
-        primaryColor: MyColors.darkOrange,
+        primaryColor: MyColors.blue,
         useMaterial3: false,
       ),
       home: const SplashScreen(),
