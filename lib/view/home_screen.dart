@@ -167,12 +167,25 @@ class _HomeScreenState extends State<HomeScreen> {
                                 color: Colors.black12
                               )
                             ),
-                            child: Row(children: [
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
                               Container(
-                                width: Get.width*0.2,
+                                width: Get.width*0.4,
                                 height: Get.height*0.1,
-                                color: Colors.red
-                                ,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: NetworkImage("${controller.offerlist[index].image}"))
+                              ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(controller.offerlist[index].tittle??""),
+                                  Text(controller.offerlist[index].precntageOffer??"")
+                                ],
                               )
                             ],),
                           ),
