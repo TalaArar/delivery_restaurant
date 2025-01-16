@@ -1,4 +1,5 @@
 import 'package:delivery_resturent/helper/colors.dart';
+import 'package:delivery_resturent/view/notifictions_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -121,7 +122,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     RowSettingsWidget(
                       data: "Notifications",
                       onTap: () {
-                        // Get.to(const NotificationsScreen());
+                        Get.to(const NotificationsSc());
                       },
                     ),
                     const Divider(
