@@ -1,4 +1,5 @@
 import 'package:delivery_resturent/helper/colors.dart';
+import 'package:delivery_resturent/view/dashboard_screen.dart';
 import 'package:delivery_resturent/view/home_screen.dart';
 import 'package:delivery_resturent/view/sign_up_screen.dart';
 import 'package:flutter/material.dart';
@@ -101,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               fixedSize:
                                   Size(Get.width * 0.7, Get.height * 0.06)),
                           onPressed: () {
-                            Get.to(const HomeScreen());
+                            Get.to(const DashboardScreen());
                           },
                           child: Text(
                             'login',
