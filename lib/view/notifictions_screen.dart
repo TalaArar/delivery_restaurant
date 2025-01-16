@@ -14,6 +14,11 @@ class _NotificationsScState extends State<NotificationsSc> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: MyColors.blue,
+          title: Text("Notifications"),
+          centerTitle: true,
+        ),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -36,7 +41,16 @@ class _NotificationsScState extends State<NotificationsSc> {
           height: Get.height*0.09,
           padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
-              color: Colors.white54,
+              color: Colors.white60
+              ,
+              boxShadow: [
+                BoxShadow(
+                  blurRadius: 0.2,
+                  spreadRadius: 0.2,
+                  offset: Offset(0, 2),
+                  color: Colors.black26
+                )
+              ],
               borderRadius: BorderRadius.circular(10)
           ),
           child: Row(
