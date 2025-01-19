@@ -24,6 +24,19 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
                       opacity: 0.5,
                       image: AssetImage("assets/images/bg.jpg"))),
             ),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    IconButton(onPressed: () {
+                      Get.back();
+                    }, icon: const Icon(Icons.navigate_before_outlined)),
+                    Text("data")
+                  ],
+                ),
+                
+              ],
+            )
           ],
         ) ,
       ),
