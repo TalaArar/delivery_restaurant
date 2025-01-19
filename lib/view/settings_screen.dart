@@ -1,5 +1,7 @@
 import 'package:delivery_resturent/helper/colors.dart';
+import 'package:delivery_resturent/view/login_screen.dart';
 import 'package:delivery_resturent/view/notifictions_screen.dart';
+import 'package:delivery_resturent/view/order_history_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -81,7 +83,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                         IconButton(
                             onPressed: () {
-                              // Get.offAll(const SignInScreen());
+                               Get.offAll( LoginScreen());
                             },
                             icon: const Icon(Icons.logout))
                       ],
@@ -93,6 +95,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                     const Gap(30),
                     RowSettingsWidget(
+                      onTap: () {
+                        Get.to(const OrderHistoryScreen());
+                      },
                       data: "Order History",
                     ),
                     const Divider(
