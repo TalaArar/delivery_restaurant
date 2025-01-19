@@ -2,11 +2,13 @@ import 'package:delivery_resturent/helper/colors.dart';
 import 'package:delivery_resturent/view/login_screen.dart';
 import 'package:delivery_resturent/view/notifictions_screen.dart';
 import 'package:delivery_resturent/view/order_history_screen.dart';
+import 'package:delivery_resturent/view/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:gap/gap.dart';
 
+import 'add_category_screen.dart';
 import 'contactus_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -107,6 +109,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                     RowSettingsWidget(
                       data: "Profile",
+                      onTap: () {
+                        Get.to(ProfileScreen());
+                      },
                     ),
                     const Divider(
                       endIndent: 20,
@@ -116,7 +121,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     RowSettingsWidget(
                       data: "Add Category",
                       onTap: () {
-                        // Get.to(const AddCategoryScreen());
+                       Get.to(const AddCategoryScreen());
                       },
                     ),
                     const Divider(

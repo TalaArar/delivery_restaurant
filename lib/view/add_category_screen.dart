@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+class AddCategoryScreen extends StatefulWidget {
+  const AddCategoryScreen({super.key});
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  State<AddCategoryScreen> createState() => _AddCategoryScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _AddCategoryScreenState extends State<AddCategoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Stack(
+        child:Stack(
           children: [
             Container(
               height: Get.height,
@@ -24,15 +24,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       opacity: 0.5,
                       image: AssetImage("assets/images/bg.jpg"))),
             ),
-            Column(
-              children: [
-
-
-              ],
-            )
           ],
-        ),
-
+        ) ,
       ),
     );
   }
