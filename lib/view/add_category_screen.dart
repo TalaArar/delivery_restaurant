@@ -9,6 +9,7 @@ class AddCategoryScreen extends StatefulWidget {
 }
 
 class _AddCategoryScreenState extends State<AddCategoryScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
