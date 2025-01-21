@@ -101,6 +101,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         Get.to(const OrderHistoryScreen());
                       },
                       data: "Order History",
+
                     ),
                     const Divider(
                       endIndent: 20,
